@@ -19,10 +19,12 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
@@ -30,12 +32,23 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env (keep .env.example tracked)
+.env
+.env*.local
+.env.development
+.env.production
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# turbopack / tooling
+.turbo
+.eslintcache
+
+# IDE (optional local settings)
+.idea/
+.vscode/*
+!.vscode/extensions.json

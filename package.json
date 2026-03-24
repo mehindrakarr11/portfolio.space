@@ -1,12 +1,16 @@
 {
-  "name": "site",
-  "version": "0.1.0",
+  "name": "rohan-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Developer portfolio — Next.js, Tailwind CSS, GSAP",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20.9.0"
   },
   "dependencies": {
     "gsap": "^3.14.2",
